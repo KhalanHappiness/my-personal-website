@@ -347,6 +347,10 @@ body{
         padding:15px;
         text-align: center;
     }
+    #resumedwnld button{
+        width: 50%;
+    }
+
     
     #experience-header{
         grid-area: experience-header;
