@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+
+
+#grid-container{
+    /* margin: 20px; */
+    display: grid;
+    grid-template-areas:  
+    "logo logo navbar navbar"
+    "heading heading image image"
+    "about about about about"
+    " Resume Resume Resume Resume"
+    "experience-header experience-header resumedwnld resumedwnld" 
+    "Upwork Upwork Upwork Upwork"
+    "Zerxis Zerxis Zerxis Zerxis"
+    "Education Education Education Education"
+    "moringa moringa moringa moringa"
+    "mmu mmu mmu mmu"
+    "skills skills skills skills"
+    " skill-content skill-content skill-content skill-content"
+    "footer footer footer footer"
+    ;
+}
+
+#logo{
+    grid-area: logo;
+    padding: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+#navbar{
+    grid-area: navbar;
+    padding-top: 50px;
+    padding-left: 40px;
+
+    font-size: larger;
+}
+#navbar ul{
+    list-style: none;
+}
+#navbar ul li{
+    display: inline;
+    margin: 15px; 
+}
+#navbar ul li a{
+    font-weight: bold;
+    text-decoration: none;
+}
+#heading{
+    grid-area: heading;
+    padding: 10px;
+}
+#title{
+    padding:10px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    margin-left: 30px;
+     
+
+}
+#content{
+    padding: 10px;
+    margin: 30px;
+
+}
+
+#resumebtn{
+    padding: 10px;
+    margin: 30px;
+    width: 50%;
+    border-radius: 8px;
+    border-width: 0px;
+    background-color: blue;
+    font-weight:bold ;
+    color: white;
+    font-size: 1rem;
+}
+#image{
+    grid-area: image;
+}
+#about{
+    grid-area: about;
+    text-align: center;
+    background: #FAFAFA;
+    padding: 100px;
+}
+#Resume{
+    grid-area: Resume;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#experience-header{
+    grid-area: experience-header;
+    padding: 20px;
+    
+    
+}
+#resumedwnld{
+    grid-area: resumedwnld;
+    padding:15px;
+}
+
+#resumedwnld button{
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    border-radius: 8px;
+    border-width: 0px;
+    background-color: blue;
+    font-weight:bold ;
+    color: white;
+    font-size: 1rem;
+
+}
+#Upwork{
+    grid-area: Upwork;
+    display: grid;
+    grid-template-areas:  
+    "Upwork-title Upwork-title"
+    "Upwork-exprnce Upwork-exprnce"
+
+    ;
+
+    margin: 50px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+
+}
+#Upwork-title{
+    background: #ECECEC;
+    margin: 20px;
+    border-radius: 8px;
+    padding: 10px;
+    
+}
+
+#Upwork-exprnce{
+    padding: 20px
+    
+}  
+#Zerxis{
+    grid-area: Zerxis;
+    display: grid;
+    grid-template-areas:  
+    "Zerxis-title Zerxis-title"
+    "Zerxis-exprnce Zerxis-exprnce";
+    margin: 50px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+ #Zerxis-title{
+    background: #ECECEC;
+    margin: 20px;
+    border-radius: 8px;
+    padding: 10px;
+}
+#Zerxis-exprnce{
+    padding: 20px
+   
+}  
+
+#Education{
+    grid-area: Education;
+    text-align: center;
+}
+#moringa{
+    grid-area: moringa;
+    display: grid;
+    grid-area: 
+    "moringa-course";
+    margin: 50px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+}
+
+#moringa-course{
+    background: #ECECEC;
+    margin: 20px;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+#mmu{
+    grid-area: mmu;
+    display: grid;
+    grid-area: 
+    "mmu-course";
+    margin: 50px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+
+}
+#mmu-course{
+    background: #ECECEC;
+    margin: 20px;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+
+#skills{
+    grid-area: skills;
+    text-align: center;
+}
+#skill-content{
+    grid-area: skill-content;
+    display: grid;
+    grid-template-areas:  
+    "software"
+    "javascript"
+    "html"
+    "css"
+    "jira"
+    ;
+    margin: 50px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.skills{
+    padding:10px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    margin: 10px;
+}
+#footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: #ECECEC;
+    font-size: smaller;
+    padding: 20px;
+}
